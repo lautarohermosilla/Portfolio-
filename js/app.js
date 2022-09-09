@@ -20,3 +20,5 @@ let sr = ScrollReveal({
 
 sr.reveal(".showcase-info", {delay: 600});
 sr.reveal(".showcase-image", {origin:top,delay: 700});
+sr.reveal(".about-info", {origin:top,delay: 100});
+

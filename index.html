@@ -17,16 +17,17 @@
 
                     <ul>
                     <li>
-                        <a href="" class="nav-link">Inicio</a>
+                        <a href="#inicio" class="nav-link">Inicio</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Sobre mi</a>
+                        <a href="#sobremi" class="nav-link">Sobre mi</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Servicios</a>
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                      
                     </li>
                     <li>
-                        <a href="" class="nav-link">Contacto</a>
+                        <a href="#servicios" class="nav-link">Servicios</a>
                     </li>
                     </ul>
                     <i class="uil uil-moon toggle-btn"></i>
@@ -35,7 +36,7 @@
     </header>
     <main>
           
-        <section class="showcase-area">
+        <section class="showcase-area" id="inicio">
 
             <div class="container">
                 <div class="showcase-info">
@@ -45,8 +46,8 @@
                         acá vas a encontrar información de mi trabajo, herramientas, etc.
                     </p>
                     <div class="cta">
-                        <a href="mailto:hermosillautaro@gmail.com" class="btn">Contact me</a>
-                        <a href="#" download class="btn secondary-btn">Download CV</a>
+                        <a href="mailto:hermosillautaro@gmail.com" class="btn">Contacto</a>
+                        <a href="#" download class="btn secondary-btn">Descargar CV</a>
                     </div>
                 </div>
                 <div class="showcase-image">
@@ -54,6 +55,46 @@
                  <img src="./img/lautadavid.png"  class="person" alt="">
 
                 </div>
+            </div>
+
+        </section>
+
+        <section class="about section" id="sobremi">
+
+            <div class="container">
+                <div class="about-grid">
+
+                </div>
+                <div class="about-info">
+                    <h3 class="sub-heading">Sobre Mi</h3>
+                    <h1 class="heading">Mejores Diseños, Mejores Experiencias</h1>
+                    <p class="text">Como dije al principio, Mi nombre es Lautaro Hermosilla, Tengo 20 años, y naci en Buenos Aires, Argentina. <br>
+                        Me dedico a el Desarrollo Web
+                    </p>
+                    <div class="cta">
+                        <a href="mailto:hermosillautaro@gmail.com" class="btn">Contacto</a>
+                        <a href="#" download class="btn secondary-btn">Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact section" id="contacto">
+            <div class="container">
+                <div class="contact-info">
+                    <h3 class="sub-heading">Contactame</h3>
+                    <h1 class="heading">¡Trabajemos Juntos!</h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ex id obcaecati, ratione reiciendis dolore unde repellat quo expedita atque tempore minus odio consequatur aliquam cupiditate excepturi, sint officiis doloremque.</p>
+                    <a href="mailto:hermosillautaro@gmail.com" class="mail">hermosillautaro@gmail.com <i class="uil uil-arrow-right"></i> </a>
+                </div>
+                <form action="index.html" class="contact-form">
+                    <h3>Enviame un mensaje</h3>
+                    <input type="text" class="form-input" placeholder="Nombre" required>
+                    <input type="email" class="form-input" placeholder="Email" required>
+                    <textarea placeholder="Detalles del Proyecto" class="form-input" required></textarea>
+                    <input type="submit" value="Send" class="btn">
+                </form>
             </div>
 
         </section>

@@ -9,18 +9,36 @@
     --main-color-dark-1:hsl(var(--hue-1), 69%, 60%);
     --main-color-2:hsl(var(--hue-2), 100%, 61%);
     --main-color-dark-2:hsl(var(--hue-2), 82%, 55%);
-    --bg-color-1:hsl(var(--hue-1), 100%, 97%);
+    --section-padding: 7rem;
+
+}
+
+body{
+    --bg-color-1:hsl(var(--hue-1), 100%, 95.5%);
     --bg-color-2:#fff;
     --bg-color-3:hsl(var(--hue-1), 100%, 98%);
     --bg-color-transparent: rgba(255,255,255,0.6);
     --heading-color:hsl(var(--hue-1), 61%, 24%);
     --text-color: hsl(var(--hue-1), 17%, 63%);
-    --section-padding: 7rem;
+}
+
+body.dark{
+    --bg-color:hsl(var(--hue-1), 19%, 15%);
+    --bg-color-1:hsl(var(--hue-1), 21%, 11%);
+    --bg-color-2:hsl(var(--hue-1), 23%, 19%);
+    --bg-color-3:hsl(var(--hue-1), 23%, 24%);
+    --bg-color-transparent:hsl(var(--hue-1, 23%, 19%, 0.6));
+    --heading-color:hsl(var(--hue-1), 100%, 95%);
+    --text-color: hsl(var(--hue-1), 14%, 51%);
+
 
 }
 
+body.dark .toggle-btn:hover{
+    background-color: brightness(110%);
 
 
+}
 
 
 /*-------ESTILOS GENERALES-----*/
@@ -417,4 +435,38 @@ textarea.form-input{
 .contact-form .form-input{
     margin-bottom: 1.5rem;
 
+}
+
+/*-----------Footer Style-----------*/
+
+footer{
+    padding: 4rem 0;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-media{
+    display: flex;
+}
+
+.social-link{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    background-color: var(--bg-color-1);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.social-link:hover{
+    color: var(--main-color-1);
 }
